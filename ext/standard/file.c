@@ -738,6 +738,7 @@ PHP_FUNCTION(tmpfile)
 /* {{{ Open a file or a URL and return a file pointer */
 PHP_FUNCTION(fopen)
 {
+	ILOG_FUNCTION("fopen")
 	char *filename, *mode;
 	size_t filename_len, mode_len;
 	bool use_include_path = 0;
@@ -1631,6 +1632,7 @@ safe_to_copy:
 /* {{{ Binary-safe file read */
 PHPAPI PHP_FUNCTION(fread)
 {
+	ILOG_FUNCTION("fread")
 	zval *res;
 	zend_long len;
 	php_stream *stream;

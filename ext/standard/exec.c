@@ -260,7 +260,7 @@ PHP_FUNCTION(exec)
 /* {{{ Execute an external program and display output */
 PHP_FUNCTION(system)
 {
-	ILOG_FUNCTION("system");
+	ILOG_FUNCTION("system")
 	php_exec_ex(INTERNAL_FUNCTION_PARAM_PASSTHRU, 1);
 }
 /* }}} */
